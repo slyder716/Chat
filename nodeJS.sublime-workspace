@@ -1,0 +1,374 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bad",
+				"badges"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"sub",
+				"subsocket"
+			],
+			[
+				"log",
+				"log_dir"
+			],
+			[
+				"do",
+				"docroot_dir"
+			],
+			[
+				"ap",
+				"apache"
+			],
+			[
+				"web",
+				"web_application"
+			],
+			[
+				"gr",
+				"group"
+			],
+			[
+				"we",
+				"web_application"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"ma",
+				"max_value"
+			],
+			[
+				"l",
+				"last_guess"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"nu",
+				"NumberGame"
+			],
+			[
+				"rep",
+				"replay"
+			],
+			[
+				"tr",
+				"tries"
+			],
+			[
+				"max",
+				"max_value"
+			],
+			[
+				"an",
+				"answer"
+			],
+			[
+				"to",
+				"to_i"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.js",
+			"settings":
+			{
+				"buffer_size": 575,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!doctype html>\n<html>\n  <head>\n    <title>Socket.IO chat</title>\n    <style>\n      * { margin: 0; padding: 0; box-sizing: border-box; }\n      body { font: 13px Helvetica, Arial; }\n      form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }\n      form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }\n      form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }\n      #messages { list-style-type: none; margin: 0; padding: 0; }\n      #messages li { padding: 5px 10px; }\n      #messages li:nth-child(odd) { background: #eee; }\n    </style>\n  </head>\n  <body>\n    <ul id=\"messages\"></ul>\n    <form action=\"\">\n      <input id=\"m\" autocomplete=\"off\" /><button>Send</button>\n    </form>\n    <script src=\"https://cdn.socket.io/socket.io-1.2.0.js\"></script>\n    <script src=\"http://code.jquery.com/jquery-1.11.1.js\"></script>\n    <script>\n      var socket = io();\n      $('form').submit(function(){\n        socket.emit('chat message', $('#m').val());\n        $('#m').val('');\n        return false;\n      }); \n      socket.on('chat message', function(msg){\n        $('#messages').append($('<li>').text(msg));\n      });\n    </script>\n  </body>\n</html>",
+			"file": "index.html",
+			"file_size": 1220,
+			"file_write_time": 1446918911000000,
+			"settings":
+			{
+				"buffer_size": 1221,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 317,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Jon/Websites/codeschool/soup/webserver/public/css/souptobits.css",
+		"/Users/Jon/Websites/codeschool/soup/webserver/app.js",
+		"/Users/Jon/Websites/codeschool/soup/webserver/lib/socket.js",
+		"/Users/Jon/Websites/codeschool/soup/webserver/models/badges.js",
+		"/Users/Jon/Websites/codeschool/soup/webserver/lib/subscribe.js",
+		"/Users/Jon/Websites/codeschool/soup/webserver/public/index.html",
+		"/Users/Jon/Websites/codeschool/soup/webserver/public/js/souptobits.js",
+		"/Users/Jon/Websites/codeschool/soup/webserver/package.json",
+		"/Users/Jon/Websites/codeschool/soup/webserver/models/badge.js",
+		"/Users/Jon/Library/Application Support/Sublime Text 2/Packages/User/HTML.sublime-settings",
+		"/Users/Jon/Websites/codeschool/soup/webserver/node_modules/express/node_modules/finalhandler/index.js",
+		"/Users/Jon/Websites/codeschool/soup/pubsub/lib/broadcast.js",
+		"/Users/Jon/Websites/codeschool/soup/pubsub/app.js",
+		"/Users/Jon/Websites/codeschool/soup/pubsub/models/badges.js",
+		"/Users/Jon/Websites/codeschool/soup/pubsub/controllers/badges.js",
+		"/Users/Jon/Websites/codeschool/soup/pubsub/lib/redis.js",
+		"/Users/Jon/Websites/codeschool/soup/pubsub/package.json",
+		"/Users/Jon/Websites/codeschool/soup/pubsub/lib/untitled",
+		"/Users/Jon/Websites/codeschool/soup/pubsub/controllers/untitled",
+		"/Users/Jon/NodeJs/Hello.js",
+		"/Users/Jon/angular-phonecat/app/js/app.js",
+		"/Users/Jon/angular-phonecat/app/js/controllers.js",
+		"/Users/Jon/angular-phonecat/app/index.html",
+		"/Users/Jon/angular-phonecat/test/e2e/scenarios.js",
+		"/Users/Jon/angular-phonecat/app/partials/phone-list.html",
+		"/Users/Jon/angular-phonecat/test/protractor-conf.js",
+		"/Users/Jon/angular-phonecat/test/unit/controllersSpec.js",
+		"/Users/Jon/Desktop/GemStore/js/app.js",
+		"/Users/Jon/Desktop/GemStore/index.html",
+		"/Users/Jon/Desktop/GemStore/css/index.html",
+		"/Users/Jon/Downloads/chef-repo/.chef/jons-validator.pem",
+		"/Users/Jon/chef-repo/cookbooks/web_application/recipes/webserver.rb",
+		"/Users/Jon/chef-repo/cookbooks/web_application/attributes/default.rb",
+		"/Users/Jon/chef-repo/cookbooks/web_application/recipes/default.rb",
+		"/Users/Jon/chef-repo/cookbooks/web_application/metadata.rb",
+		"/Users/Jon/chef-repo/.chef/slyder716.pem",
+		"/Users/Jon/chef-repo/.chef/jons-validator.pem",
+		"/Users/Jon/Downloads/chef-repo/.chef/slyder716.pem",
+		"/Users/Jon/chef-repo/cookbooks/web_application/templates/default/firewall_http.erb",
+		"/Users/Jon/chef-repo/cookbooks/web_application/templates/default/customers.conf.erb",
+		"/Users/Jon/chef-repo/cookbooks/web_application/recipes/user.rb",
+		"/Users/Jon/chef-repo/cookbooks/learn_chef_httpd/templates/default/index.html.erb",
+		"/Users/Jon/Desktop/Dashboard/index.htm",
+		"/Users/Jon/Desktop/Dashboard/overall.htm",
+		"/Users/Jon/Desktop/Dashboard/customer.htm",
+		"/Users/Jon/Desktop/Dashboard/js/highcharts.js",
+		"/Users/Jon/Desktop/Dashboard/js/highcharts.src.js",
+		"/Users/Jon/Desktop/Highcharts-4/index.htm",
+		"/Users/Jon/Ruby_Training/Assignment1.rb"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"container9",
+			"container5",
+			"data−sparkline="
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"data-sparkline="
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.js",
+					"settings":
+					{
+						"buffer_size": 575,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								405,
+								405
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 1221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1080,
+								1080
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 115.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "package.json",
+					"settings":
+					{
+						"buffer_size": 317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 173.0,
+	"status_bar_visible": true
+}
